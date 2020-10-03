@@ -1,7 +1,7 @@
 # ToDo-List
 ## Приложение: Список задач
 ### Стек технологий:
-* JavaScrip
+* JavaScript
 ### Ссылка на GitHub Pages: <https://petrudin.github.io/ToDo-List/>
 
 ### Screenshots:
