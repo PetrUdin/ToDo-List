@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     todoTitle.append(nowDate);
 
-};
+}
 }
 
 
