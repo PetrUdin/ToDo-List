@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    function todoStart() {
+function todoStart() {
     const input = document.querySelector(".todo__input");
     const ul = document.querySelector(".todo__list");
     const saveBtn = document.querySelector(".todo__btn-save");
@@ -85,5 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     todoTitle.append(nowDate);
 
-}   
+};
+
+
+// document.addEventListener("DOMContentLoaded", todoStart); 
 }
