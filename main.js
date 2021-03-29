@@ -1,4 +1,5 @@
-function todoStart() {
+document.addEventListener("DOMContentLoaded", () => {
+    function todoStart() {
     const input = document.querySelector(".todo__input");
     const ul = document.querySelector(".todo__list");
     const saveBtn = document.querySelector(".todo__btn-save");
@@ -24,23 +25,18 @@ function todoStart() {
         listenDeleteTodo(deleteBtn);
     };
 
-    /*Удаление элемента*/
-
     function listenDeleteTodo(elem) {
         elem.addEventListener("click", () => {
             elem.parentElement.remove();
         });
     };
 
-    /*Зачеркивает пункт как выполненный*/
     function onClickTodo(event) {
         if (event.target.tagName === "LI") {
             event.target.classList.toggle("checked");
         }
     }
     ul.addEventListener("click", onClickTodo);
-
-    /*загрузка сохраненных из storage*/
 
     function loadTodos() {
         const data = localStorage.getItem("todo__list");
@@ -53,9 +49,6 @@ function todoStart() {
         }
     }
     loadTodos();
-
-
-    /*Действия кнопок*/
 
     saveBtn.addEventListener("click", () => {
         localStorage.setItem("todo__list", ul.innerHTML);
@@ -85,6 +78,7 @@ function todoStart() {
     todoTitle.append(nowDate);
 
 };
+}
 
 
-document.addEventListener("DOMContentLoaded", todoStart);
+
