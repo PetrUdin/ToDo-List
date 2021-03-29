@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
 function todoStart() {
     const input = document.querySelector(".todo__input");
     const ul = document.querySelector(".todo__list");
@@ -88,5 +87,4 @@ function todoStart() {
 };
 
 
-// document.addEventListener("DOMContentLoaded", todoStart); 
-}
+document.addEventListener("DOMContentLoaded", todoStart);
